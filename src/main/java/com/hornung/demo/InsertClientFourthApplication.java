@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class InsertClientThirdOneApplication {
+public class InsertClientFourthApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(InsertClientThirdOneApplication.class, args);
+		SpringApplication.run(InsertClientFourthApplication.class, args);
 	}
 
 }
