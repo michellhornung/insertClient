@@ -1,0 +1,16 @@
+com.hornung.crud.clients
+com.hornung.crud.clients.builders.dto
+com.hornung.crud.clients.builders.entity
+com.hornung.crud.clients.controllers
+com.hornung.crud.clients.controllers.handler
+com.hornung.crud.clients.dtos.request
+com.hornung.crud.clients.dtos.response
+com.hornung.crud.clients.entities
+com.hornung.crud.clients.exceptions
+com.hornung.crud.clients.mappers
+com.hornung.crud.clients.repositories
+com.hornung.crud.clients.security
+com.hornung.crud.clients.services
+com.hornung.crud.clients.services.validations
+com.hornung.crud.clients.services.validations.client.annotations
+com.hornung.crud.clients.services.validations.client.aspects
