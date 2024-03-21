@@ -5,7 +5,7 @@ package com.hornung.crud.clients.exceptions;
  */
 public class NameIsNotValidException extends RuntimeException {
 
-    private static final String ERROR = "O nome não é um valo válido";
+    private static final String ERROR = "O nome não é um valor válido";
 
     /**
      * Construtor padrão que cria uma nova instância da exceção com a mensagem de erro padrão.
