@@ -17,4 +17,6 @@ public interface ClientRepository extends JpaRepository<Client, Long> {
      */
     @Query("SELECT c FROM Client c JOIN c.cellphoneList cell WHERE cell.number = :cellphone")
     Client findByCellphone(String cellphone);
+
+    Client findByName(String name);
 }

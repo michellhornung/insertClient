@@ -50,6 +50,18 @@ public class HandlerExceptionController {
     }
 
     /**
+     * Manipula a exceção NameIsNotValidException.
+     *
+     * @param e       A exceção NameIsNotValidException.
+     * @param request O HttpServletRequest.
+     * @return Uma ResponseEntity contendo uma resposta padronizada e o status HTTP correspondente.
+     */
+    @ExceptionHandler(NameIsNotValidException.class)
+    public ResponseEntity<GenericStandardException> cellphoneHasExistsInDatabase(NameIsNotValidException e, HttpServletRequest request) {
+        return genericHandlingException(e, HttpStatus.BAD_REQUEST.value(), request.getRequestURI());
+    }
+
+    /**
      * Manipula a exceção ClientIdNotIsValidException.
      *
      * @param e       A exceção ClientIdNotIsValidException.

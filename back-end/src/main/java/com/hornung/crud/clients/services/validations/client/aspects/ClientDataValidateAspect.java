@@ -85,6 +85,9 @@ public class ClientDataValidateAspect extends CommonsPointcut {
      * @throws NameNotContaisMinimumCharactersException Exceção lançada se o nome não contiver o número mínimo de caracteres
      */
     public void nameMinimumTenCharactersValidate(String name) {
+        if (CLIENT_REPOSITORY.findByName(name) != null) {
+            throw new NameIsNotValidException();
+        }
         if (name.length() < 10) {
             throw new NameNotContaisMinimumCharactersException();
         }
